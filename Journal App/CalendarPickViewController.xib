@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalendarPickViewController" customModule="Journal_App" customModuleProvider="target">
+            <connections>
+                <outlet property="datePicker" destination="D1x-HE-afI" id="ys8-Q6-QIG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="CalendarPickViewController" translatesAutoresizingMaskIntoConstraints="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="572" height="509"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="0ff-0Z-4rd">
+                    <rect key="frame" x="0.0" y="0.0" width="572" height="44"/>
+                    <items>
+                        <barButtonItem systemItem="done" id="Iuw-7b-mX7">
+                            <connections>
+                                <action selector="datePicked:" destination="-1" id="Pvn-Bb-aad"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+                <datePicker contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="D1x-HE-afI">
+                    <rect key="frame" x="16" y="54" width="540" height="379.66666666666669"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                    <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
+                        <!--2037-12-31 11:00:00 +0000-->
+                    </date>
+                </datePicker>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="0ff-0Z-4rd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="FgK-cC-pDp"/>
+                <constraint firstItem="D1x-HE-afI" firstAttribute="top" secondItem="0ff-0Z-4rd" secondAttribute="bottom" constant="10" id="JJA-Kx-lRB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="D1x-HE-afI" secondAttribute="trailing" constant="16" id="QcZ-jt-wKx"/>
+                <constraint firstItem="D1x-HE-afI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="aN4-na-xaj"/>
+                <constraint firstItem="0ff-0Z-4rd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="apW-IC-ydo"/>
+                <constraint firstAttribute="trailing" secondItem="0ff-0Z-4rd" secondAttribute="trailing" id="vVJ-a9-2vg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-270.2290076335878" y="-125"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

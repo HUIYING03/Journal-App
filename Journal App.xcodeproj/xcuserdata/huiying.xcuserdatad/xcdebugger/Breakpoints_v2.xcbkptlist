@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C6374B9B-59D2-4E55-8134-43B011E3545B"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0FBF6904-1D6D-4130-B35F-B591CB8AC472"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Journal App/TimePickViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "doneButton(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0FBF6904-1D6D-4130-B35F-B591CB8AC472 - 9188f6ab96490079"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Journal_App.TimePickViewController.doneButton(Any) -&gt; ()"
+                  moduleName = "Journal App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huiying/Desktop/3178/final-mobile-app/final-mobile-app/Journal%20App/TimePickViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "1576">
+               </Location>
+               <Location
+                  uuid = "0FBF6904-1D6D-4130-B35F-B591CB8AC472 - 9188f6ab96490079"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Journal_App.TimePickViewController.doneButton(Any) -&gt; ()"
+                  moduleName = "Journal App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huiying/Desktop/3178/final-mobile-app/final-mobile-app/Journal%20App/TimePickViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "1568">
+               </Location>
+               <Location
+                  uuid = "0FBF6904-1D6D-4130-B35F-B591CB8AC472 - 9188f6ab96490079"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Journal_App.TimePickViewController.doneButton(Any) -&gt; ()"
+                  moduleName = "Journal App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/huiying/Desktop/3178/final-mobile-app/final-mobile-app/Journal%20App/TimePickViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "1804">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

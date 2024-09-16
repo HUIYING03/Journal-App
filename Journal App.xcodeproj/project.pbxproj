@@ -1,0 +1,912 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B20C0DF62BD6080900F11B66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20C0DF52BD6080900F11B66 /* AppDelegate.swift */; };
+		B20C0DF82BD6080900F11B66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20C0DF72BD6080900F11B66 /* SceneDelegate.swift */; };
+		B20C0DFD2BD6080900F11B66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20C0DFB2BD6080900F11B66 /* Main.storyboard */; };
+		B20C0DFF2BD6080B00F11B66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20C0DFE2BD6080B00F11B66 /* Assets.xcassets */; };
+		B20C0E022BD6080B00F11B66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20C0E002BD6080B00F11B66 /* LaunchScreen.storyboard */; };
+		B20C0E0D2BD6080B00F11B66 /* Journal_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20C0E0C2BD6080B00F11B66 /* Journal_AppTests.swift */; };
+		B20C0E172BD6080B00F11B66 /* Journal_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20C0E162BD6080B00F11B66 /* Journal_AppUITests.swift */; };
+		B20C0E192BD6080B00F11B66 /* Journal_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20C0E182BD6080B00F11B66 /* Journal_AppUITestsLaunchTests.swift */; };
+		B20C0E292BD61F9100F11B66 /* CalendarPickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20C0E272BD61F9100F11B66 /* CalendarPickViewController.swift */; };
+		B20C0E2A2BD61F9100F11B66 /* CalendarPickViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B20C0E282BD61F9100F11B66 /* CalendarPickViewController.xib */; };
+		B214FD5B2C085A3B00BA1A47 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214FD5A2C085A3B00BA1A47 /* SettingsTableViewController.swift */; };
+		B214FD5D2C08661800BA1A47 /* ManageAccTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214FD5C2C08661800BA1A47 /* ManageAccTableViewController.swift */; };
+		B214FD5F2C089A9100BA1A47 /* ImagePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214FD5E2C089A9100BA1A47 /* ImagePageViewController.swift */; };
+		B214FD672C0C0AE800BA1A47 /* JournalImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214FD662C0C0AE800BA1A47 /* JournalImageModel.swift */; };
+		B214FD712C0C0CF000BA1A47 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214FD702C0C0CF000BA1A47 /* CoreDataController.swift */; };
+		B214FD7E2C0C119000BA1A47 /* Journal-DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B214FD7C2C0C119000BA1A47 /* Journal-DataModel.xcdatamodeld */; };
+		B214FD852C0C11F700BA1A47 /* MyJournalImage+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214FD832C0C11F700BA1A47 /* MyJournalImage+CoreDataClass.swift */; };
+		B214FD862C0C11F700BA1A47 /* MyJournalImage+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214FD842C0C11F700BA1A47 /* MyJournalImage+CoreDataProperties.swift */; };
+		B214FD882C0D53DC00BA1A47 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214FD872C0D53DC00BA1A47 /* WeatherData.swift */; };
+		B214FD8A2C0D566200BA1A47 /* ForecastData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214FD892C0D566200BA1A47 /* ForecastData.swift */; };
+		B214FD8E2C0D748C00BA1A47 /* CityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214FD8D2C0D748C00BA1A47 /* CityData.swift */; };
+		B214FD902C0E1F3900BA1A47 /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214FD8F2C0E1F3900BA1A47 /* ScheduleTableViewController.swift */; };
+		B214FD922C0E823700BA1A47 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214FD912C0E823700BA1A47 /* HeaderView.swift */; };
+		B214FD962C0E839E00BA1A47 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214FD952C0E839E00BA1A47 /* Schedule.swift */; };
+		B214FD9B2C0E860F00BA1A47 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214FD992C0E860F00BA1A47 /* ScheduleTableViewCell.swift */; };
+		B214FD9E2C0EA57300BA1A47 /* AddScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B214FD9D2C0EA57300BA1A47 /* AddScheduleViewController.swift */; };
+		B2237F3E2C107D1A0008CCDB /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2237F3D2C107D1A0008CCDB /* Utility.swift */; };
+		B24784A52C14103E00D28C2F /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24784A42C14103E00D28C2F /* AboutViewController.swift */; };
+		B24BE60F2BD646C3006C3B34 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24BE60E2BD646C3006C3B34 /* QuoteViewController.swift */; };
+		B24BE6172BD657B3006C3B34 /* VolumeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24BE6162BD657B3006C3B34 /* VolumeData.swift */; };
+		B24BE61C2BD7AAD5006C3B34 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B24BE61B2BD7AAD5006C3B34 /* FirebaseAuth */; };
+		B24BE61E2BD7AAD5006C3B34 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B24BE61D2BD7AAD5006C3B34 /* FirebaseFirestore */; };
+		B24BE6202BD7AAD5006C3B34 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B24BE61F2BD7AAD5006C3B34 /* FirebaseFirestoreSwift */; };
+		B24BE6262BD7AD20006C3B34 /* LoginRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24BE6252BD7AD20006C3B34 /* LoginRegisterViewController.swift */; };
+		B24BE6282BD7AD29006C3B34 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24BE6272BD7AD29006C3B34 /* LoginViewController.swift */; };
+		B24BE62A2BD7AD36006C3B34 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24BE6292BD7AD36006C3B34 /* RegisterViewController.swift */; };
+		B24BE6312BD7B23B006C3B34 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24BE6302BD7B23B006C3B34 /* MulticastDelegate.swift */; };
+		B24BE6332BDE068D006C3B34 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B24BE6322BDE068D006C3B34 /* GoogleService-Info.plist */; };
+		B24BE6352BDF759A006C3B34 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = B24BE6342BDF759A006C3B34 /* FirebaseStorage */; };
+		B26AA3012BF265D700808461 /* TodolistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AA3002BF265D700808461 /* TodolistTableViewController.swift */; };
+		B26AA3032BF265E000808461 /* TaskTodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AA3022BF265E000808461 /* TaskTodo.swift */; };
+		B26AA3052BF265E700808461 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AA3042BF265E600808461 /* AddTaskViewController.swift */; };
+		B26AA3072BF2661300808461 /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AA3062BF2661300808461 /* FirebaseController.swift */; };
+		B26AA3092BF2663800808461 /* DatabaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AA3082BF2663800808461 /* DatabaseProtocol.swift */; };
+		B27ABFAF2BF33A94007D6AC0 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27ABFAE2BF33A93007D6AC0 /* DetailsViewController.swift */; };
+		B27ABFB52BFB13EF007D6AC0 /* SleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27ABFB22BFB132B007D6AC0 /* SleepViewController.swift */; };
+		B298A7322BFC6D4D00AF86BE /* TimePickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B298A7302BFC6D4D00AF86BE /* TimePickViewController.swift */; };
+		B298A7332BFC6D4D00AF86BE /* TimePickViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B298A7312BFC6D4D00AF86BE /* TimePickViewController.xib */; };
+		B2DA837E2BE1DE6F003F68DC /* TextImageCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DA837D2BE1DE6F003F68DC /* TextImageCollectionViewController.swift */; };
+		B2DA83802BE1E71F003F68DC /* TextCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DA837F2BE1E71F003F68DC /* TextCollectionViewCell.swift */; };
+		B2DA83822BE1E735003F68DC /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DA83812BE1E735003F68DC /* ImageCollectionViewCell.swift */; };
+		C89FF3612BFB18DF00A1F002 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89FF3602BFB18DF00A1F002 /* ReminderViewController.swift */; };
+		C89FF3632BFB18F300A1F002 /* TimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89FF3622BFB18F300A1F002 /* TimePickerViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B20C0E092BD6080B00F11B66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B20C0DEA2BD6080900F11B66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B20C0DF12BD6080900F11B66;
+			remoteInfo = "Journal App";
+		};
+		B20C0E132BD6080B00F11B66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B20C0DEA2BD6080900F11B66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B20C0DF12BD6080900F11B66;
+			remoteInfo = "Journal App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B20C0DF22BD6080900F11B66 /* Journal App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Journal App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20C0DF52BD6080900F11B66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B20C0DF72BD6080900F11B66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B20C0DFC2BD6080900F11B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B20C0DFE2BD6080B00F11B66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B20C0E012BD6080B00F11B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B20C0E032BD6080B00F11B66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20C0E082BD6080B00F11B66 /* Journal AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Journal AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20C0E0C2BD6080B00F11B66 /* Journal_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal_AppTests.swift; sourceTree = "<group>"; };
+		B20C0E122BD6080B00F11B66 /* Journal AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Journal AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20C0E162BD6080B00F11B66 /* Journal_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal_AppUITests.swift; sourceTree = "<group>"; };
+		B20C0E182BD6080B00F11B66 /* Journal_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B20C0E272BD61F9100F11B66 /* CalendarPickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPickViewController.swift; sourceTree = "<group>"; };
+		B20C0E282BD61F9100F11B66 /* CalendarPickViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarPickViewController.xib; sourceTree = "<group>"; };
+		B214FD5A2C085A3B00BA1A47 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		B214FD5C2C08661800BA1A47 /* ManageAccTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageAccTableViewController.swift; sourceTree = "<group>"; };
+		B214FD5E2C089A9100BA1A47 /* ImagePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePageViewController.swift; sourceTree = "<group>"; };
+		B214FD662C0C0AE800BA1A47 /* JournalImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalImageModel.swift; sourceTree = "<group>"; };
+		B214FD702C0C0CF000BA1A47 /* CoreDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
+		B214FD7D2C0C119000BA1A47 /* Journal-DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Journal-DataModel.xcdatamodel"; sourceTree = "<group>"; };
+		B214FD832C0C11F700BA1A47 /* MyJournalImage+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyJournalImage+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		B214FD842C0C11F700BA1A47 /* MyJournalImage+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyJournalImage+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		B214FD872C0D53DC00BA1A47 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		B214FD892C0D566200BA1A47 /* ForecastData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastData.swift; sourceTree = "<group>"; };
+		B214FD8D2C0D748C00BA1A47 /* CityData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityData.swift; sourceTree = "<group>"; };
+		B214FD8F2C0E1F3900BA1A47 /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
+		B214FD912C0E823700BA1A47 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		B214FD952C0E839E00BA1A47 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		B214FD992C0E860F00BA1A47 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		B214FD9D2C0EA57300BA1A47 /* AddScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddScheduleViewController.swift; sourceTree = "<group>"; };
+		B2237F3D2C107D1A0008CCDB /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		B24784A42C14103E00D28C2F /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		B24BE60E2BD646C3006C3B34 /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
+		B24BE6162BD657B3006C3B34 /* VolumeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeData.swift; sourceTree = "<group>"; };
+		B24BE6252BD7AD20006C3B34 /* LoginRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegisterViewController.swift; sourceTree = "<group>"; };
+		B24BE6272BD7AD29006C3B34 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B24BE6292BD7AD36006C3B34 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		B24BE6302BD7B23B006C3B34 /* MulticastDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
+		B24BE6322BDE068D006C3B34 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B26AA3002BF265D700808461 /* TodolistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodolistTableViewController.swift; sourceTree = "<group>"; };
+		B26AA3022BF265E000808461 /* TaskTodo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTodo.swift; sourceTree = "<group>"; };
+		B26AA3042BF265E600808461 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		B26AA3062BF2661300808461 /* FirebaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
+		B26AA3082BF2663800808461 /* DatabaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseProtocol.swift; sourceTree = "<group>"; };
+		B27ABFAE2BF33A93007D6AC0 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		B27ABFB22BFB132B007D6AC0 /* SleepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepViewController.swift; sourceTree = "<group>"; };
+		B298A7302BFC6D4D00AF86BE /* TimePickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickViewController.swift; sourceTree = "<group>"; };
+		B298A7312BFC6D4D00AF86BE /* TimePickViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimePickViewController.xib; sourceTree = "<group>"; };
+		B2DA837D2BE1DE6F003F68DC /* TextImageCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextImageCollectionViewController.swift; sourceTree = "<group>"; };
+		B2DA837F2BE1E71F003F68DC /* TextCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCollectionViewCell.swift; sourceTree = "<group>"; };
+		B2DA83812BE1E735003F68DC /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		C89FF3602BFB18DF00A1F002 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReminderViewController.swift; path = ../ToDoList/ReminderViewController.swift; sourceTree = "<group>"; };
+		C89FF3622BFB18F300A1F002 /* TimePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B20C0DEF2BD6080900F11B66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24BE61C2BD7AAD5006C3B34 /* FirebaseAuth in Frameworks */,
+				B24BE6352BDF759A006C3B34 /* FirebaseStorage in Frameworks */,
+				B24BE61E2BD7AAD5006C3B34 /* FirebaseFirestore in Frameworks */,
+				B24BE6202BD7AAD5006C3B34 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20C0E052BD6080B00F11B66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20C0E0F2BD6080B00F11B66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B20C0DE92BD6080900F11B66 = {
+			isa = PBXGroup;
+			children = (
+				B20C0DF42BD6080900F11B66 /* Journal App */,
+				B20C0E0B2BD6080B00F11B66 /* Journal AppTests */,
+				B20C0E152BD6080B00F11B66 /* Journal AppUITests */,
+				B20C0DF32BD6080900F11B66 /* Products */,
+				C89FF3642BFB1ADF00A1F002 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B20C0DF32BD6080900F11B66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B20C0DF22BD6080900F11B66 /* Journal App.app */,
+				B20C0E082BD6080B00F11B66 /* Journal AppTests.xctest */,
+				B20C0E122BD6080B00F11B66 /* Journal AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B20C0DF42BD6080900F11B66 /* Journal App */ = {
+			isa = PBXGroup;
+			children = (
+				B214FD602C0C087000BA1A47 /* DataModel */,
+				B24BE6322BDE068D006C3B34 /* GoogleService-Info.plist */,
+				B24BE62B2BD7ADA0006C3B34 /* database */,
+				B20C0DF52BD6080900F11B66 /* AppDelegate.swift */,
+				B20C0DF72BD6080900F11B66 /* SceneDelegate.swift */,
+				B24BE6302BD7B23B006C3B34 /* MulticastDelegate.swift */,
+				B20C0DFB2BD6080900F11B66 /* Main.storyboard */,
+				B20C0DFE2BD6080B00F11B66 /* Assets.xcassets */,
+				B20C0E002BD6080B00F11B66 /* LaunchScreen.storyboard */,
+				B20C0E032BD6080B00F11B66 /* Info.plist */,
+				B2237F3F2C116F540008CCDB /* Login */,
+				B2237F402C1170010008CCDB /* Journalling */,
+				B2237F432C1170FA0008CCDB /* ToDoList */,
+				B2237F442C11712E0008CCDB /* SleepReminder */,
+				B2237F462C1171860008CCDB /* Setting */,
+				B2237F452C1171610008CCDB /* Schedule */,
+				B2237F3D2C107D1A0008CCDB /* Utility.swift */,
+				B26AA3062BF2661300808461 /* FirebaseController.swift */,
+				B214FD702C0C0CF000BA1A47 /* CoreDataController.swift */,
+				B214FD912C0E823700BA1A47 /* HeaderView.swift */,
+				B20C0E282BD61F9100F11B66 /* CalendarPickViewController.xib */,
+				B20C0E272BD61F9100F11B66 /* CalendarPickViewController.swift */,
+			);
+			path = "Journal App";
+			sourceTree = "<group>";
+		};
+		B20C0E0B2BD6080B00F11B66 /* Journal AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B20C0E0C2BD6080B00F11B66 /* Journal_AppTests.swift */,
+			);
+			path = "Journal AppTests";
+			sourceTree = "<group>";
+		};
+		B20C0E152BD6080B00F11B66 /* Journal AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B20C0E162BD6080B00F11B66 /* Journal_AppUITests.swift */,
+				B20C0E182BD6080B00F11B66 /* Journal_AppUITestsLaunchTests.swift */,
+			);
+			path = "Journal AppUITests";
+			sourceTree = "<group>";
+		};
+		B214FD602C0C087000BA1A47 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				B214FD832C0C11F700BA1A47 /* MyJournalImage+CoreDataClass.swift */,
+				B214FD842C0C11F700BA1A47 /* MyJournalImage+CoreDataProperties.swift */,
+				B214FD7C2C0C119000BA1A47 /* Journal-DataModel.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		B2237F3F2C116F540008CCDB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B24BE6252BD7AD20006C3B34 /* LoginRegisterViewController.swift */,
+				B24BE6272BD7AD29006C3B34 /* LoginViewController.swift */,
+				B24BE6292BD7AD36006C3B34 /* RegisterViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B2237F402C1170010008CCDB /* Journalling */ = {
+			isa = PBXGroup;
+			children = (
+				B2DA837D2BE1DE6F003F68DC /* TextImageCollectionViewController.swift */,
+				B2DA837F2BE1E71F003F68DC /* TextCollectionViewCell.swift */,
+				B2DA83812BE1E735003F68DC /* ImageCollectionViewCell.swift */,
+				B214FD5E2C089A9100BA1A47 /* ImagePageViewController.swift */,
+				B24BE60E2BD646C3006C3B34 /* QuoteViewController.swift */,
+				B24BE6162BD657B3006C3B34 /* VolumeData.swift */,
+				B214FD872C0D53DC00BA1A47 /* WeatherData.swift */,
+				B214FD892C0D566200BA1A47 /* ForecastData.swift */,
+				B214FD8D2C0D748C00BA1A47 /* CityData.swift */,
+				B214FD662C0C0AE800BA1A47 /* JournalImageModel.swift */,
+			);
+			path = Journalling;
+			sourceTree = "<group>";
+		};
+		B2237F432C1170FA0008CCDB /* ToDoList */ = {
+			isa = PBXGroup;
+			children = (
+				B26AA3002BF265D700808461 /* TodolistTableViewController.swift */,
+				B27ABFAE2BF33A93007D6AC0 /* DetailsViewController.swift */,
+				B26AA3022BF265E000808461 /* TaskTodo.swift */,
+				B26AA3042BF265E600808461 /* AddTaskViewController.swift */,
+				B298A7312BFC6D4D00AF86BE /* TimePickViewController.xib */,
+				B298A7302BFC6D4D00AF86BE /* TimePickViewController.swift */,
+			);
+			path = ToDoList;
+			sourceTree = "<group>";
+		};
+		B2237F442C11712E0008CCDB /* SleepReminder */ = {
+			isa = PBXGroup;
+			children = (
+				B27ABFB22BFB132B007D6AC0 /* SleepViewController.swift */,
+				C89FF3602BFB18DF00A1F002 /* ReminderViewController.swift */,
+				C89FF3622BFB18F300A1F002 /* TimePickerViewController.swift */,
+			);
+			path = SleepReminder;
+			sourceTree = "<group>";
+		};
+		B2237F452C1171610008CCDB /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				B214FD952C0E839E00BA1A47 /* Schedule.swift */,
+				B214FD8F2C0E1F3900BA1A47 /* ScheduleTableViewController.swift */,
+				B214FD992C0E860F00BA1A47 /* ScheduleTableViewCell.swift */,
+				B214FD9D2C0EA57300BA1A47 /* AddScheduleViewController.swift */,
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		B2237F462C1171860008CCDB /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				B214FD5A2C085A3B00BA1A47 /* SettingsTableViewController.swift */,
+				B214FD5C2C08661800BA1A47 /* ManageAccTableViewController.swift */,
+				B24784A42C14103E00D28C2F /* AboutViewController.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		B24BE62B2BD7ADA0006C3B34 /* database */ = {
+			isa = PBXGroup;
+			children = (
+				B26AA3082BF2663800808461 /* DatabaseProtocol.swift */,
+			);
+			path = database;
+			sourceTree = "<group>";
+		};
+		C89FF3642BFB1ADF00A1F002 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B20C0DF12BD6080900F11B66 /* Journal App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20C0E1C2BD6080B00F11B66 /* Build configuration list for PBXNativeTarget "Journal App" */;
+			buildPhases = (
+				B20C0DEE2BD6080900F11B66 /* Sources */,
+				B20C0DEF2BD6080900F11B66 /* Frameworks */,
+				B20C0DF02BD6080900F11B66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Journal App";
+			packageProductDependencies = (
+				B24BE61B2BD7AAD5006C3B34 /* FirebaseAuth */,
+				B24BE61D2BD7AAD5006C3B34 /* FirebaseFirestore */,
+				B24BE61F2BD7AAD5006C3B34 /* FirebaseFirestoreSwift */,
+				B24BE6342BDF759A006C3B34 /* FirebaseStorage */,
+			);
+			productName = "Journal App";
+			productReference = B20C0DF22BD6080900F11B66 /* Journal App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B20C0E072BD6080B00F11B66 /* Journal AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20C0E1F2BD6080B00F11B66 /* Build configuration list for PBXNativeTarget "Journal AppTests" */;
+			buildPhases = (
+				B20C0E042BD6080B00F11B66 /* Sources */,
+				B20C0E052BD6080B00F11B66 /* Frameworks */,
+				B20C0E062BD6080B00F11B66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B20C0E0A2BD6080B00F11B66 /* PBXTargetDependency */,
+			);
+			name = "Journal AppTests";
+			productName = "Journal AppTests";
+			productReference = B20C0E082BD6080B00F11B66 /* Journal AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B20C0E112BD6080B00F11B66 /* Journal AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20C0E222BD6080B00F11B66 /* Build configuration list for PBXNativeTarget "Journal AppUITests" */;
+			buildPhases = (
+				B20C0E0E2BD6080B00F11B66 /* Sources */,
+				B20C0E0F2BD6080B00F11B66 /* Frameworks */,
+				B20C0E102BD6080B00F11B66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B20C0E142BD6080B00F11B66 /* PBXTargetDependency */,
+			);
+			name = "Journal AppUITests";
+			productName = "Journal AppUITests";
+			productReference = B20C0E122BD6080B00F11B66 /* Journal AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B20C0DEA2BD6080900F11B66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					B20C0DF12BD6080900F11B66 = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1510;
+					};
+					B20C0E072BD6080B00F11B66 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = B20C0DF12BD6080900F11B66;
+					};
+					B20C0E112BD6080B00F11B66 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = B20C0DF12BD6080900F11B66;
+					};
+				};
+			};
+			buildConfigurationList = B20C0DED2BD6080900F11B66 /* Build configuration list for PBXProject "Journal App" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B20C0DE92BD6080900F11B66;
+			packageReferences = (
+				B24BE61A2BD7AAD5006C3B34 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = B20C0DF32BD6080900F11B66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B20C0DF12BD6080900F11B66 /* Journal App */,
+				B20C0E072BD6080B00F11B66 /* Journal AppTests */,
+				B20C0E112BD6080B00F11B66 /* Journal AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B20C0DF02BD6080900F11B66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20C0E022BD6080B00F11B66 /* LaunchScreen.storyboard in Resources */,
+				B20C0DFF2BD6080B00F11B66 /* Assets.xcassets in Resources */,
+				B298A7332BFC6D4D00AF86BE /* TimePickViewController.xib in Resources */,
+				B24BE6332BDE068D006C3B34 /* GoogleService-Info.plist in Resources */,
+				B20C0DFD2BD6080900F11B66 /* Main.storyboard in Resources */,
+				B20C0E2A2BD61F9100F11B66 /* CalendarPickViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20C0E062BD6080B00F11B66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20C0E102BD6080B00F11B66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B20C0DEE2BD6080900F11B66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B214FD902C0E1F3900BA1A47 /* ScheduleTableViewController.swift in Sources */,
+				B24BE62A2BD7AD36006C3B34 /* RegisterViewController.swift in Sources */,
+				B214FD862C0C11F700BA1A47 /* MyJournalImage+CoreDataProperties.swift in Sources */,
+				B20C0E292BD61F9100F11B66 /* CalendarPickViewController.swift in Sources */,
+				B2DA83822BE1E735003F68DC /* ImageCollectionViewCell.swift in Sources */,
+				B214FD922C0E823700BA1A47 /* HeaderView.swift in Sources */,
+				B214FD8A2C0D566200BA1A47 /* ForecastData.swift in Sources */,
+				B214FD9E2C0EA57300BA1A47 /* AddScheduleViewController.swift in Sources */,
+				B214FD852C0C11F700BA1A47 /* MyJournalImage+CoreDataClass.swift in Sources */,
+				B26AA3052BF265E700808461 /* AddTaskViewController.swift in Sources */,
+				B24BE6172BD657B3006C3B34 /* VolumeData.swift in Sources */,
+				C89FF3632BFB18F300A1F002 /* TimePickerViewController.swift in Sources */,
+				B214FD5F2C089A9100BA1A47 /* ImagePageViewController.swift in Sources */,
+				B26AA3072BF2661300808461 /* FirebaseController.swift in Sources */,
+				B214FD9B2C0E860F00BA1A47 /* ScheduleTableViewCell.swift in Sources */,
+				B2DA837E2BE1DE6F003F68DC /* TextImageCollectionViewController.swift in Sources */,
+				B20C0DF62BD6080900F11B66 /* AppDelegate.swift in Sources */,
+				B214FD962C0E839E00BA1A47 /* Schedule.swift in Sources */,
+				C89FF3612BFB18DF00A1F002 /* ReminderViewController.swift in Sources */,
+				B2237F3E2C107D1A0008CCDB /* Utility.swift in Sources */,
+				B26AA3012BF265D700808461 /* TodolistTableViewController.swift in Sources */,
+				B214FD672C0C0AE800BA1A47 /* JournalImageModel.swift in Sources */,
+				B214FD882C0D53DC00BA1A47 /* WeatherData.swift in Sources */,
+				B27ABFB52BFB13EF007D6AC0 /* SleepViewController.swift in Sources */,
+				B24BE6262BD7AD20006C3B34 /* LoginRegisterViewController.swift in Sources */,
+				B214FD5B2C085A3B00BA1A47 /* SettingsTableViewController.swift in Sources */,
+				B24BE6282BD7AD29006C3B34 /* LoginViewController.swift in Sources */,
+				B214FD8E2C0D748C00BA1A47 /* CityData.swift in Sources */,
+				B298A7322BFC6D4D00AF86BE /* TimePickViewController.swift in Sources */,
+				B214FD7E2C0C119000BA1A47 /* Journal-DataModel.xcdatamodeld in Sources */,
+				B20C0DF82BD6080900F11B66 /* SceneDelegate.swift in Sources */,
+				B2DA83802BE1E71F003F68DC /* TextCollectionViewCell.swift in Sources */,
+				B24BE60F2BD646C3006C3B34 /* QuoteViewController.swift in Sources */,
+				B214FD712C0C0CF000BA1A47 /* CoreDataController.swift in Sources */,
+				B26AA3032BF265E000808461 /* TaskTodo.swift in Sources */,
+				B26AA3092BF2663800808461 /* DatabaseProtocol.swift in Sources */,
+				B24BE6312BD7B23B006C3B34 /* MulticastDelegate.swift in Sources */,
+				B214FD5D2C08661800BA1A47 /* ManageAccTableViewController.swift in Sources */,
+				B24784A52C14103E00D28C2F /* AboutViewController.swift in Sources */,
+				B27ABFAF2BF33A94007D6AC0 /* DetailsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20C0E042BD6080B00F11B66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20C0E0D2BD6080B00F11B66 /* Journal_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20C0E0E2BD6080B00F11B66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20C0E192BD6080B00F11B66 /* Journal_AppUITestsLaunchTests.swift in Sources */,
+				B20C0E172BD6080B00F11B66 /* Journal_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B20C0E0A2BD6080B00F11B66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B20C0DF12BD6080900F11B66 /* Journal App */;
+			targetProxy = B20C0E092BD6080B00F11B66 /* PBXContainerItemProxy */;
+		};
+		B20C0E142BD6080B00F11B66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B20C0DF12BD6080900F11B66 /* Journal App */;
+			targetProxy = B20C0E132BD6080B00F11B66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B20C0DFB2BD6080900F11B66 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B20C0DFC2BD6080900F11B66 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B20C0E002BD6080B00F11B66 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B20C0E012BD6080B00F11B66 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B20C0E1A2BD6080B00F11B66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B20C0E1B2BD6080B00F11B66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B20C0E1D2BD6080B00F11B66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JX4GG364T9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Journal App/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Journal-App-2024";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B20C0E1E2BD6080B00F11B66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JX4GG364T9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Journal App/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Journal-App-2024";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B20C0E202BD6080B00F11B66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JX4GG364T9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Journal-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Journal App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Journal App";
+			};
+			name = Debug;
+		};
+		B20C0E212BD6080B00F11B66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JX4GG364T9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Journal-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Journal App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Journal App";
+			};
+			name = Release;
+		};
+		B20C0E232BD6080B00F11B66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JX4GG364T9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Journal-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Journal App";
+			};
+			name = Debug;
+		};
+		B20C0E242BD6080B00F11B66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JX4GG364T9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Journal-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Journal App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B20C0DED2BD6080900F11B66 /* Build configuration list for PBXProject "Journal App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20C0E1A2BD6080B00F11B66 /* Debug */,
+				B20C0E1B2BD6080B00F11B66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B20C0E1C2BD6080B00F11B66 /* Build configuration list for PBXNativeTarget "Journal App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20C0E1D2BD6080B00F11B66 /* Debug */,
+				B20C0E1E2BD6080B00F11B66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B20C0E1F2BD6080B00F11B66 /* Build configuration list for PBXNativeTarget "Journal AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20C0E202BD6080B00F11B66 /* Debug */,
+				B20C0E212BD6080B00F11B66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B20C0E222BD6080B00F11B66 /* Build configuration list for PBXNativeTarget "Journal AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20C0E232BD6080B00F11B66 /* Debug */,
+				B20C0E242BD6080B00F11B66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B24BE61A2BD7AAD5006C3B34 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.24.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B24BE61B2BD7AAD5006C3B34 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B24BE61A2BD7AAD5006C3B34 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		B24BE61D2BD7AAD5006C3B34 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B24BE61A2BD7AAD5006C3B34 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		B24BE61F2BD7AAD5006C3B34 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B24BE61A2BD7AAD5006C3B34 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		B24BE6342BDF759A006C3B34 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B24BE61A2BD7AAD5006C3B34 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		B214FD7C2C0C119000BA1A47 /* Journal-DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B214FD7D2C0C119000BA1A47 /* Journal-DataModel.xcdatamodel */,
+			);
+			currentVersion = B214FD7D2C0C119000BA1A47 /* Journal-DataModel.xcdatamodel */;
+			path = "Journal-DataModel.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B20C0DEA2BD6080900F11B66 /* Project object */;
+}
